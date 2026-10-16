@@ -1,0 +1,121 @@
+/* 1. 全域設定 (Global Styles) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    
+    /* 這裡換成了彩色的背景！
+       使用非常柔和的 TWICE 杏色 (Apricot) 與粉紅色 (Magenta) 進行對角漸層 
+       這樣既有顏色，又不會太刺眼而失去簡約感 */
+    background: linear-gradient(135deg, #fff3ea 0%, #ffebf3 100%);
+    
+    color: #1d1d1f;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /* 確保背景顏色延伸到整個螢幕高度 (Viewport height) */
+}
+
+/* 讓主要內容置中且控制寬度 */
+.container {
+    max-width: 680px;
+    margin: 60px auto;
+}
+
+/* 2. 標題區塊 (Hero Section) */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* TWICE 專屬色漸層文字效果 */
+.twice-gradient {
+    background: linear-gradient(45deg, #FCC89B, #FF5FA2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+.twice-text {
+    color: #FF5FA2;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #6e6e73; /* 稍微加深一點點，讓它在彩色背景上更易讀 */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* 3. 點擊展開卡片 (Accordion Cards) */
+.apple-card {
+    background-color: #ffffff; /* 保持卡片純白，在彩色背景上會非常凸顯且高級 */
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(255, 95, 162, 0.08); /* 陰影也加入一點點微弱的 TWICE 粉紅色 */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.apple-card summary::-webkit-details-marker {
+    display: none; 
+}
+
+.apple-card summary {
+    padding: 22px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.apple-card summary:hover {
+    background-color: #fffafc; /* 滑鼠移過去時有一點點粉色回饋 */
+}
+
+.apple-card summary::after {
+    content: '+';
+    color: #FF5FA2;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.apple-card[open] summary::after {
+    transform: rotate(45deg);
+}
+
+/* 4. 卡片內部內容 */
+.details-content {
+    padding: 0 30px 30px 30px;
+    color: #515154;
+    border-top: 1px solid #f5f5f7;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+.details-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.details-content li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f5f5f7;
+}
+
+.fav-section {
+    margin-bottom: 25px;
+}
+
+/* 5. 頁尾 (Footer) */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #86868b;
+}
