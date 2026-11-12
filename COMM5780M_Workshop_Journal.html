@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COMM5780M | Workshop Journal</title>
+<link rel="stylesheet" href="basic.css">
 <style>
 :root{--blue:#1687c9;--navy:#20364d;--green:#16866b;--paper:#fbfcff;--line:#e3eaf1;--muted:#64748b}
 *{box-sizing:border-box}
@@ -37,9 +38,10 @@ footer{border-top:1px solid var(--line);padding:20px 0 35px;color:var(--muted);f
 <h1>COMM5780M Workshop Journal</h1>
 <p class="intro">A record of my workshop activities, practical work and reflections throughout the module.</p>
 </header>
+
 <main>
 <details name="workshops">
-<summary>Week 2 · Workshop 1 — Creating and Hosting a Website</summary>
+<summary>Week 2 — Creating and Hosting a Website</summary>
 <div class="week-content">
 <h2>My work</h2>
 <p>I refreshed my understanding of HTML and CSS, created and edited my portfolio website, and used GitHub to upload and publish the website. I also became familiar with CampusPress and its purpose.</p>
@@ -47,20 +49,173 @@ footer{border-top:1px solid var(--line);padding:20px 0 35px;color:var(--muted);f
 <div class="reflection">
 <p>As a Digital Media Technology undergraduate, I had learned some HTML before, but I had forgotten most of it. This workshop gave me an opportunity to review the basics and bring back some of that knowledge. I also found it challenging to design the layout and make the website look the way I wanted.</p>
 <p>Publishing my own website for the first time felt quite special. It was interesting to see something I had learned and created become connected to the real world.</p>
-<p class="cn">中文理解：本科時曾經學過 HTML，但大部分已經忘記。這次 Workshop 讓我重新溫習基礎知識。設計網頁版面對我來說比較有挑戰。第一次把自己製作的網站公開發布，感覺很奇妙，也讓我感受到自己學習和製作的東西真正與現實連結起來。</p>
 </div>
 <h2>Workshop evidence</h2>
-<div class="evidence">Add your own screenshots here, such as your portfolio homepage or GitHub Pages website.</div>
-</div>
+<div class="evidence">
+    <figure class="evidence-figure">
+        <img src="images/github-upload.png" alt="GitHub website upload screenshot">
+        <figcaption>Uploading my portfolio website to GitHub.</figcaption>
+    </figure>
+</div></div>
 </details>
+
+
+
 <details name="workshops">
-<summary>Week 3 · Workshop 2</summary>
-<div class="week-content"><p>Workshop task, practical work, reflection and evidence will be added after reviewing your actual task and experience.</p></div>
+    <summary>Week 3 — Web Scraping</summary>
+
+    <div class="week-content">
+
+        <h2>My work</h2>
+        <p>
+            In this workshop, I used the WebScraper.io Chrome extension
+            to collect Russell Westbrook's NBA statistics from
+            Basketball-Reference. I extracted his season-by-season
+            statistics, including points, rebounds, assists and
+            shooting percentages, and organised the data into a table.
+        </p>
+
+        <h2>My reflection</h2>
+        <p>
+            At first, I found the tool a bit confusing because I was
+            unfamiliar with some of the technical terms. It took me
+            some time to work out how to use it. However, I enjoyed
+            working with basketball data, especially as Westbrook
+            is my favourite player. I also felt a little bit sense of achievement
+            when I successfully collected the data.
+        </p>
+
+        <p>
+            This workshop helped me realise that I could collect
+            data from websites without writing Python code.
+            However, I still need more practice to understand
+            how web scraping can be used in research.
+        </p>
+
+        <h2>Workshop evidence</h2>
+
+        <div class="evidence">
+
+            <figure class="evidence-figure">
+                <img src="images/web-scraping.png"
+                     alt="Using WebScraper.io to select Westbrook's statistics">
+                <figcaption>
+                    Figure 1. Selecting the statistics table
+                    using the WebScraper.io Chrome extension.
+                </figcaption>
+            </figure>
+
+            <figure class="evidence-figure">
+                <img src="images/westbrook-data.png"
+                     alt="Russell Westbrook's season-by-season statistics dataset">
+                <figcaption>
+                    Figure 2. The dataset collected from
+                    Basketball-Reference.
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
 </details>
+
+
 <details name="workshops">
-<summary>Week 4–5 · Workshop project</summary>
-<div class="week-content"><p>Content will be added after reviewing the project brief and your actual work.</p></div>
+    <summary>Week 4–5 — Data Collection and Visualisation</summary>
+
+    <div class="week-content">
+
+        <h2>My work</h2>
+        <p>
+            For this group project, we explored the question:
+            "How do Chinese overseas students use generative AI tools
+            to support their everyday learning?"
+        </p>
+
+        <p>
+            We divided the data collection work between group members,
+            with each person focusing on a different social media platform.
+            Together, we collected 50 posts and organised the information
+            into a shared spreadsheet. We also developed coding rules
+            to classify AI tools, learning purposes and attitudes.
+            Using this dataset, we explored patterns in AI use through
+            data visualisation.
+        </p>
+
+        <h2>My reflection</h2>
+        <p>
+            At first, our group did not communicate much, and everyone
+            was trying to understand the task individually. This made
+            our progress quite slow. However, once we started sharing
+            ideas and dividing up the work, everything became much
+            more efficient. This experience showed me how important
+            effective communication and teamwork are.
+        </p>
+
+        <p>
+            Organising the posts into numerical categories made
+            the data easier to compare and visualise. However,
+            our sample was limited, and we could not always confirm
+            whether the posts represented Chinese overseas students.
+        </p>
+
+        <h2>Workshop evidence</h2>
+
+        <div class="evidence">
+
+            <figure class="evidence-figure excel-screenshot">
+                <img src="images/week4-dataset.png"
+                     alt="Original Excel dataset collected by our group">
+                <figcaption>
+                    Figure 1. Our group dataset containing
+                    information collected from social media platforms.
+                </figcaption>
+            </figure>
+
+            <figure class="evidence-figure analysis-dashboard">
+                <img src="images/week5-learning-purposes.png"
+                     alt="Data visualisation dashboard analysing generative AI use">
+                <figcaption>
+                    Figure 2. Data visualisation of our collected
+                    posts, showing patterns in generative AI use
+                    and the limitations of our dataset.
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </div>
 </details>
+
+
+
+<details name="workshops">
+    <summary>Week 6 — Identity, Algorithmic Identity and Data</summary>
+
+    <div class="week-content">
+
+        <h2>My work</h2>
+        <p>
+            In this workshop, I explored how social media platforms
+            collect information about their users. I chose Instagram
+            and went to Meta's Accounts Centre to request a copy
+            of my personal data.
+        </p>
+
+        <p>
+            I have submitted the data export request, but the file
+            is still being prepared. I will continue exploring
+            the information once it becomes available.
+        </p>
+
+        <h2>My reflection</h2>
+        <p>
+            This process made me realise that...
+        </p>
+
+    </div>
+</details>
+
 </main>
 <footer>Jenson Kung · COMM5780M Digital Practice</footer>
 </body>

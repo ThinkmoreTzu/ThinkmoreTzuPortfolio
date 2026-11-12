@@ -353,3 +353,54 @@ a { color: inherit; }
     .task-item p { font-size: 0.76rem; }
     .workshop-overview, .reflection-section, .progress-section { padding-top: 20px; }
 }
+
+.evidence-figure {
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.evidence-figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.evidence-figure figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* Week 4–5: Original Excel screenshot */
+.evidence-figure.excel-screenshot img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 520px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Week 4–5: Data visualisation dashboard */
+.evidence-figure.analysis-dashboard {
+    max-width: 900px;
+    width: 100%;
+    margin: 28px auto;
+}
+
+.evidence-figure.analysis-dashboard img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
